@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ko" data-theme="dark">
+  <head>
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>로켓 상세 | Rocket Detail</title>
+    <meta name="description" content="로켓 상세 페이지" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body id="top" class="page-detail">
+    <a class="skip" href="#main">본문 바로가기</a>
+
+    <header class="topbar" role="banner">
+      <div class="container topbar__inner">
+        <a class="brand" href="index.html#top" aria-label="홈으로">
+          <span class="brand__logo" aria-hidden="true">🚀</span>
+          <span class="brand__text">로켓의 역사</span>
+        </a>
+
+        <nav class="nav" aria-label="주요 섹션">
+          <a href="index.html#timeline">타임라인</a>
+          <a href="index.html#milestones">역사적 인물</a>
+        </nav>
+
+        <div class="topbar__actions">
+          <a class="btn btn--ghost" href="index.html#timeline">목록으로</a>
+          <button id="themeBtn" class="btn btn--ghost" type="button">
+            🌙
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="detail">
+      <div class="container detail__inner">
+        <div class="detail__media">
+          <div class="detail__sticky">
+            <header class="detail__mediaHead">
+              <h1 id="rTitle">로켓</h1>
+              <p id="rSub" class="muted">부제</p>
+            </header>
+
+            <img
+              id="rImg"
+              class="detail__img"
+              src=""
+              alt=""
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+
+        <div class="detail__content">
+          <div class="detail__pager" aria-label="상세 페이지 이동">
+            <a id="prevBtn" class="btn btn--ghost" href="#" aria-label="이전 상세">← 이전</a>
+            <a id="nextBtn" class="btn btn--ghost" href="#" aria-label="다음 상세">다음 →</a>
+          </div>
+
+          <section class="card detail-card">
+            <h2>개요</h2>
+            <div id="rOverview"></div>
+          </section>
+
+          <section class="card detail-card">
+            <h2>핵심 기술</h2>
+            <div id="rTech"></div>
+          </section>
+
+          <section class="card detail-card">
+            <h2>역사적 의미</h2>
+            <div id="rImpact"></div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="muted">© Rocket History.Chanhui Ko</p>
+        <a class="btn btn--ghost" href="#top">맨 위로</a>
+      </div>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

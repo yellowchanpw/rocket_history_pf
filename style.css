@@ -772,4 +772,25 @@ textarea {
   width: 100%;
   padding: 10px;
   font-family: inherit;
+
+}
+/* 문의 입력칸 화면에 맞게 확장 */
+#about .controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+#about .controls .input {
+  width: 100%;
+}
+
+#about textarea {
+  width: 100%;
+}
+/*------ 모바일 -----*/
+@media (max-width: 600px) {
+  #about .controls {
+    grid-template-columns: 1fr;
+  }
 }

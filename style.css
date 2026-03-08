@@ -772,7 +772,6 @@ textarea {
   width: 100%;
   padding: 10px;
   font-family: inherit;
-
 }
 /* 문의 입력칸 화면에 맞게 확장 */
 #about .controls {
@@ -794,3 +793,4 @@ textarea {
     grid-template-columns: 1fr;
   }
 }
+
